@@ -6,7 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('locations', function() {});
+  this.resource('listings', function() {
+    this.route('new');
+    this.route('show', { path: ':listing_id' });
+  });
+
+  this.route('products');
 });
 
 export default Router;
