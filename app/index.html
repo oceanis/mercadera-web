@@ -12,18 +12,21 @@
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/mercadera-web.css">
 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     {{content-for 'head-footer'}}
   </head>
   <body>
     <div id="header">
       <div class="container">
         <div class="col-sm-2">
-          <a id='mercadera-logo' href='#'>
-            <img class="img-responsive" src="assets/images/mercadera-logo.png" alt="Mercadera Logo">
-          </a>
         </div>
         <div class="col-sm-6">
-          <p>Middle</p>
+          <ul class="list-inline">
+            <li>
+              <a href="#">Categorias</a>
+            </li>
+          </ul>
         </div>
         <div class="col-sm-4">
           <p>Actions</p>
@@ -31,11 +34,195 @@
       </div>
     </div>
 
-    {{content-for 'body'}}
+    <!-- {{content-for 'body'}} -->
+
+    <!-- <div id="hero" class="green">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h2><span>Mercadera.com</span>, el portal de comercio pensado en vos.</h2>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="breadcrumb-nav">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Library</a></li>
+          <li class="active">Data</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="top-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="title">Deportivo Hyundai Genesis Coupe 2011</h2>
+
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active">
+                <a href="#overview" role="tab" data-toggle="tab"><i class="fa fa-info"></i> Información</a>
+              </li>
+              <li>
+                <a href="#gallery" role="tab" data-toggle="tab"><i class="fa fa-image"></i> Galería de Imagenes</a>
+                </li>
+              <li>
+                <a href="#comments" role="tab" data-toggle="tab"><i class="fa fa-comments"></i> Preguntas & Comentarios</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="overview">
+              <div class="box">
+                <div class="image-gallery">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <img class="img-responsive hero-img" src="http://lorempixel.com/800/600" alt="">
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="thumbnail-strip">
+                        <div class="item">
+                          <img src="http://lorempixel.com/125/100" alt="" class="img-responsive">
+                        </div>
+                        <div class="item">
+                          <img src="http://lorempixel.com/125/100" alt="" class="img-responsive">
+                        </div>
+                        <div class="item">
+                          <img src="http://lorempixel.com/125/100" alt="" class="img-responsive">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="lead">Hyundai Veloster 2013 TURBO, 1.6cc. caja mecánica sexta, encendido a boton, butacas de cuero, calentadores de butacas, sin choques, 11000 millas de recorrido, aire acondicionado, llantas nuevas aros 18", pantalla touch con bluetooth, equipo de sonido Dimensión, realmente impecable estado mecánico y estético, a prueba de cualquier mecanico. El carro se va a cualquier parte de Bolivia. Unico dueño todo al día. Ref. 70724220.</p>
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="gallery">
+                <div class="box">
+                  <div class="row">
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                    <div class="col-md-6"><img src="http://placehold.it/600x480" alt="" class="img-responsive"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="comments">
+                <div class="box">
+                  <p>Hyundai Veloster 2013 TURBO, 1.6cc. caja mecánica sexta, encendido a boton, butacas de cuero, calentadores de butacas, sin choques, 11000 millas de recorrido, aire acondicionado, llantas nuevas aros 18", pantalla touch con bluetooth, equipo de sonido Dimensión, realmente impecable estado mecánico y estético, a prueba de cualquier mecanico. El carro se va a cualquier parte de Bolivia. Unico dueño todo al día. Ref. 70724220.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+
+            <div class="social-share">
+              <!-- <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn-block text-center btn-side"><i class="fa fa-star"></i>Marcar</a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn-block text-center btn-side"><i class="fa fa-exclamation-triangle"></i>Reportar</a>
+                </div>
+              </div> -->
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn-block btn-primary text-center"><i class="fa fa-star"></i>Marcar</a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn-block btn-danger text-center"><i class="fa fa-exclamation-triangle"></i>Reportar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box attributes">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td class="attribute-name price-label">Precio</td>
+                    <td class="attribute-value price">$34,000</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Ciudad</td>
+                    <td class="attribute-value">Santa Cruz</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Teléfono</td>
+                    <td class="attribute-value">777-668-88</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Visitas</td>
+                    <td class="attribute-value">23</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Publicado desde</td>
+                    <td class="attribute-value">23/04/2015</td>
+                  </tr>
+                  <tr>
+                    <td class="attribute-name">Expira el</td>
+                    <td class="attribute-value">23/06/2015</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="box product-owner">
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object avatar" src="http://placehold.it/62x62" alt="...">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <a href="#"><h4 class="media-heading">Daniel Tapia</h4></a>
+                  <div class="member-since">Miembero desde: <strong>Mar 25, 2015</strong></div>
+                  <div class="owner-listings">Anuncios publicados: <strong>43</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <p class="product-disclaimer text-center">Mercadera.com no tiene responsabilidad alguna sobre los productos ofertados ni en las transacciones que ocurran entre los usuarios de este medio.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="assets/vendor.js"></script>
     <script src="assets/mercadera-web.js"></script>
 
     {{content-for 'body-footer'}}
+
+    <div class="footer"></div>
   </body>
 </html>
