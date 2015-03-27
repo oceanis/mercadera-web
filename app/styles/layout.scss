@@ -33,6 +33,38 @@ body {
     }
   }
 
+  .open > a.btn-nav {
+    color: #555;
+    background: #fff !important;
+  }
+
+  .dropdown-menu {
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.175);
+  }
+
+  .categories-menu {
+    width: 720px;
+
+    a {
+      color: #555;
+      display: block;
+      font-size: 12px;
+      padding: 4px 8px;
+      font-weight: bold;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-radius: 3px;
+        color: #338eda;
+        border-color: #d6ecff;
+        text-decoration: none;
+        background-image: -webkit-linear-gradient(top, #f5f9fc, #edf5fa);
+      }
+    }
+  }
+
   .search-bar {
     margin: 6px 0;
     padding: 6px 12px;
