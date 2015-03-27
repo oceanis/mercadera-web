@@ -58,7 +58,8 @@
                 </div>
               </div>
             </div>
-
+						
+						<h4 class="description-heading">Descripcion</h4>
             <p class="product-description hidden-xs">{{model.description}}</p>
 
           </div>
@@ -175,12 +176,16 @@
                 <td class="attribute-value price">${{model.price}}</td>
               </tr>
               <tr>
-                <td class="attribute-name">Ciudad</td>
-                <td class="attribute-value">{{model.location_id.name}}</td>
+                <td class="attribute-name">Nombre</td>
+                <td class="attribute-value">{{model.contact_name}}</td>
               </tr>
               <tr>
                 <td class="attribute-name">Teléfono</td>
                 <td class="attribute-value">{{model.telephone}}</td>
+              </tr>
+              <tr>
+                <td class="attribute-name">Ciudad</td>
+                <td class="attribute-value">{{model.location_id.name}}</td>
               </tr>
               <tr>
                 <td class="attribute-name">Visitas</td>

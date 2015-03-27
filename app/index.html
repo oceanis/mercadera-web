@@ -17,19 +17,70 @@
     {{content-for 'head-footer'}}
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-        <div class="col-sm-2">
+    <div class="visible-xs">
+      <div id="mobile-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4"><a href="#"><i class="fa fa-bars"></i></a></div>
+            <div class="col-xs-4 text-center"><div class="logo">Mercadera</div></div>
+            <div class="col-xs-4"><img src="http://lorempixel.com/30/30" alt=""></div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="text" class="search-bar" placeholder="Estoy buscando un...">
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <ul class="list-inline">
-            <li>
-              <a href="#">Categorias</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-sm-4">
-          <p>Actions</p>
+      </div>
+    </div>
+
+
+    <div class="hidden-xs">
+      <div id="header" role="navigation">
+        <div class="container">
+
+
+            <div class="navbar-brand">
+              <span>Mercadera</span>
+            </div>
+
+          
+            <div class="collapse navbar-collapse">
+              <div class="nav navbar-nav">
+                <div class="dropdown">
+                  <a class="btn-nav text-center" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+
+                  <ul class="dropdown-menu" role="menu">
+                    <li>Home</li>
+                    <li><a href="#">Autos y Vehículos</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              
+              <div class="navbar-left">
+                <input type="text" class="search-bar" placeholder="Estoy buscando un...">
+              </div>
+
+            
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <div class="dropdown">
+                    <a class="text-center user-avatar" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://lorempixel.com/30/30" alt=""><span class="caret"></span></a>
+
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                      <li>Home</li>
+                      <li><a href="#">Autos y Vehículos</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li><a href="#" class="create-listing">Publicar un anuncio</a></li>
+              </ul>
+            </div>
+
+
+          </div>
         </div>
       </div>
     </div>

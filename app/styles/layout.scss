@@ -8,7 +8,101 @@ body {
   min-height: 45px;
   background: #78a300;
   font-family: 'Arial', sans-serif;
+
+  .navbar-brand {
+    height: auto;
+    color: #fff;
+    padding: 12px 15px;
+    margin-right: 35px;
+  }
+
+  .btn-nav {
+    display: inline-block;
+    margin: 6px 15px 0 0;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    background: #95be22;
+    border-radius: 4px 4px 0 0;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+
+    &:hover {
+      background: #8eb520;
+      text-decoration: none;
+    }
+  }
+
+  .search-bar {
+    margin: 6px 0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #527000;
+  }
+
+  ul.navbar-right {
+    margin: 6px 0;
+
+    .user-avatar {
+      margin-right: 10px;
+
+      img {
+        margin-right: 3px;
+        border-radius: 3px;
+        border: 1px solid #527000;
+      }
+
+      span {
+        color: #fff;
+        opacity: 0.5;
+      }
+    }
+
+    .create-listing {
+      color: #fff;
+      display: block;
+      padding: 5px 20px;
+      border-radius: 3px;
+      background-color: #fda028;
+      border: 1px solid #527000;
+    }
+
+    &:hover span {
+      opacity: 1;
+    }
+  }
+
+  .open > a {
+    background: transparent;
+
+    span {
+      opacity: 1 !important;
+    }
+  }
 }
+
+
+#mobile-header {
+  height: 75px;
+  padding: 5px 0;
+  background: #78a300;
+
+  .logo {
+    color: #fff;
+    padding: 3px 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: 1px solid #527000;
+  }
+}
+
 
 .breadcrumb-nav {
   font-size: 12px;
@@ -109,12 +203,28 @@ a {
   background: #333;
 }
 
-@media(min-width:768px) {
+@media(min-width: 768px) {
   #header {
     height: 45px;
   }
 
   #mercadera-logo {
     margin-bottom: 0px;
+  }
+
+  #header .search-bar{
+    width: 180px;
+  }
+}
+
+@media(min-width: 992px) {
+  #header .search-bar {
+    width: 380px;
+  }
+}
+
+@media(min-width: 1200px) {
+  #header .search-bar {
+    width: 530px;
   }
 }
