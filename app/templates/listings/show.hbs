@@ -203,7 +203,7 @@
               </tr>
               <tr>
                 <td class="attribute-name">Ciudad</td>
-                <td class="attribute-value">{{model.location_id.name}}</td>
+                <td class="attribute-value">{{model.location.name}}</td>
               </tr>
               <tr>
                 <td class="attribute-name">Visitas</td>
@@ -211,7 +211,7 @@
               </tr>
               <tr>
                 <td class="attribute-name">Publicado desde</td>
-                <td class="attribute-value">{{model.created_at}}</td>
+                <td class="attribute-value">{{date-format model.created_at}}</td>
               </tr>
               <tr>
                 <td class="attribute-name">Expira el</td>
