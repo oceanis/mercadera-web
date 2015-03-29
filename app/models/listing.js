@@ -7,6 +7,7 @@ export default DS.Model.extend({
   contact_name: DS.attr('string'),
   email: DS.attr('string'),
   created_at: DS.attr('date'),
+  expires_at: DS.attr('date'),
   telephone: DS.attr('string'),
   location: DS.belongsTo('location', { async: true }),
   user: DS.belongsTo('user', { async: true })
